@@ -1,0 +1,23 @@
+<nav class="nav">
+
+    <img src="" alt="" class="nav__logo">
+
+    <div class="nav__upper">
+        <div>
+            <p>IA website</p>
+        </div>
+    </div>
+
+    <div class="nav__lower">
+
+        <a href="#" class="nav__cta">
+            <img src="" alt="" class="nav__cta-image">
+        </a>
+
+        <button class="nav__menu-button">
+            
+        </button>
+
+    </div>
+
+</nav>

@@ -13,13 +13,12 @@
 
       <header class="site-header">
         <!-- site navigation -->
-        <squarespace:navigation navigationId="siteNav" template="site-navigation" />
+        <squarespace:navigation navigationId="siteNav" template="nav" />
 
         <!-- site title or logo -->
         {.section website}
           <h1 class="site-title-heading" data-content-field="site-title">
             <a href="/" class="site-title-link">{siteTitle}</a>
-            <p>Yooooo</p>
           </h1>
         {.end}
       </header>
