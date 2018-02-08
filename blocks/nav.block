@@ -6,7 +6,9 @@
     <!-- Upper -->
     <div class="nav__upper">
         <div>
-            <p>IA website</p>
+            <a class="nav__ia-website-link" href="#">
+                <img class="nav__ia-website-link-image" src="/assets/images/ia-website-nav-image.svg" alt="IA Website link">
+            </a>
         </div>
     </div>
     <!-- End Upper -->
@@ -15,12 +17,10 @@
     <div class="nav__lower">
 
         <a href="#" class="nav__cta">
-            <img src="" alt="" class="nav__cta-image">
+            <img src="/assets/images/nav-cta.svg" alt="Navigation 'Free trial' button" class="nav__cta-image">
         </a>
 
-        <button class="nav__menu-button">
-            
-        </button>
+        <img src="/assets/images/icons/menu-button.svg" alt="menu button" class="nav__menu-button-image">
 
     </div>
     <!-- End Lower -->
