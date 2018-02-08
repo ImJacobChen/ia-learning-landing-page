@@ -1,13 +1,17 @@
 <nav class="nav">
 
-    <img src="" alt="" class="nav__logo">
+    <!-- Logo -->
+    <img src="/assets/images/ia-logo.svg" alt="Investment Association Logo" class="nav__logo">
 
+    <!-- Upper -->
     <div class="nav__upper">
         <div>
             <p>IA website</p>
         </div>
     </div>
+    <!-- End Upper -->
 
+    <!-- Lower -->
     <div class="nav__lower">
 
         <a href="#" class="nav__cta">
@@ -19,5 +23,6 @@
         </button>
 
     </div>
+    <!-- End Lower -->
 
 </nav>
