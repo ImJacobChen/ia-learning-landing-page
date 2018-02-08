@@ -19,6 +19,7 @@
         {.section website}
           <h1 class="site-title-heading" data-content-field="site-title">
             <a href="/" class="site-title-link">{siteTitle}</a>
+            <p>Yooooo</p>
           </h1>
         {.end}
       </header>
