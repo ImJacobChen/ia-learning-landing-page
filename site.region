@@ -20,7 +20,19 @@
       <main class="content-container" role="main" data-content-field="main-content">
        {squarespace.main-content}
 
-       {@|apply see-more-block.block}
+        <div class="see-more-block">
+          <div class="see-more-block__left">
+      
+          </div>
+          <div class="see-more-block__right">
+            <div class="see-more-block__right__title">
+              <squarespace:block-field id="seeMoreBlock1Title" columns="1"/>
+            </div>
+            <button class="see-more-block__right__see-more-button">
+              <squarespace:block-field id="seeMoreBlock1Button" columns="1"/>
+            </button>
+          </div>
+        </div>
       </main>
 
       <!--Footer with open block field -->
