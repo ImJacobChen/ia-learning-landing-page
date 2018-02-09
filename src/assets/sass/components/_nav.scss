@@ -1,0 +1,55 @@
+.nav {
+    width: 100%;
+    position: relative;
+}
+
+.nav__logo {
+    width: 33%;
+    position: absolute;
+    left: 17px;
+    z-index: 2;
+}
+
+/* Nav Top */
+.nav__top {
+    position: relative;
+    min-height: 24px;
+    background: #333366;
+}
+
+.nav__top__ia-website-link {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+
+    img {
+        height: 16px;
+    }
+}
+
+/* Nav Bottom */
+.nav__bottom {
+    position: relative;
+    min-height: 40px;
+    background: #000033;
+}
+
+.nav__bottom__free-trial-link {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    img {
+        height: 20px;
+    }
+}
+
+.nav__bottom__menu-icon {
+    height: 22px;
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translate(0, -50%);
+}

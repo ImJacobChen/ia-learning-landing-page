@@ -1,0 +1,48 @@
+.carousel {
+    
+}
+
+.carousel__slides {
+
+}
+
+/* Carousel slide */
+.carousel__slide {
+    position: relative;
+}
+
+/* Slide top */
+.carousel__slide__top {
+    position: relative;
+}
+
+.carousel__slide-image {
+    width: 100%;
+}
+
+.carousel__slide-title {
+    width: 80%;
+    position: absolute;
+    left: 19px;
+    bottom: 19px;
+    z-index: 2;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+/* Slide bottom */
+.carousel__slide__bottom {
+    background: #66CC99;
+    padding: 8px 19px;
+}
+
+.carousel__slide-subtext {
+    color: #003333;
+    margin: 0;
+}
+
+.carousel__navigation {
+    background: #99FFCC;
+    position: relative;
+}
