@@ -19,6 +19,8 @@
       <!-- cms content injection point -->
       <main class="content-container" role="main" data-content-field="main-content">
        {squarespace.main-content}
+
+       {@|apply see-more-block.block}
       </main>
 
       <!--Footer with open block field -->
