@@ -8,6 +8,8 @@ var concat = require('gulp-concat');
 
 var assetsSrc = './src/assets';
 
+gulp.task('default', ['serve']);
+
 gulp.task('serve', ['html', 'sass', 'images', 'scripts', 'fonts'], function() {
     browserSync.init({
         server: {
@@ -16,9 +18,9 @@ gulp.task('serve', ['html', 'sass', 'images', 'scripts', 'fonts'], function() {
     });
 
     gulp.watch('./src/index.html', ['html']).on('change', browserSync.reload);
-    gulp.watch(assetsSrc+'/sass/**/*.scss', ['sass']).on('change', browserSync.reload);
-    gulp.watch(assetsSrc+'/images/**/*.*', ['images']).on('change', browserSync.reload);
-    gulp.watch(assetsSrc+'/scripts/*.js', ['scripts']).on('change', browserSync.reload);
+    gulp.watch(assetsSrc + '/sass/**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch(assetsSrc + '/images/**/*.*', ['images']).on('change', browserSync.reload);
+    gulp.watch(assetsSrc + '/scripts/*.js', ['scripts']).on('change', browserSync.reload);
 });
 
 gulp.task('html', function() {
@@ -27,7 +29,7 @@ gulp.task('html', function() {
 });
 
 gulp.task('sass', function() {
-    return gulp.src(assetsSrc+'/sass/main.scss')
+    return gulp.src(assetsSrc + '/sass/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer({
             browsers: [
@@ -42,27 +44,28 @@ gulp.task('sass', function() {
             ],
             cascade: false
         }))
-        .pipe(cleanCSS())
+        //.pipe(cleanCSS())
         .pipe(rename('style.css'))
         .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('images', function() {
-    return gulp.src(assetsSrc+'/images/**/*.*')
+    return gulp.src(assetsSrc + '/images/**/*.*')
         .pipe(gulp.dest('./dist/images'));
 });
 
 gulp.task('scripts', function() {
     return gulp.src([
-        assetsSrc+'/scripts/jquery-3.3.1.min.js',
-        assetsSrc+'/scripts/slick.min.js',
-        assetsSrc+'/scripts/app.js'
+        assetsSrc + '/scripts/jquery-3.3.1.min.js',
+        assetsSrc + '/scripts/slick.min.js',
+        assetsSrc + '/scripts/dropdown.js',
+        assetsSrc + '/scripts/app.js'
     ])
         .pipe(concat('script.js'))
         .pipe(gulp.dest('./dist'));
 });
 
 gulp.task('fonts', function() {
-    return gulp.src(assetsSrc+'/fonts/**.*')
+    return gulp.src(assetsSrc + '/fonts/**.*')
         .pipe(gulp.dest('./dist/fonts'))
 }) 

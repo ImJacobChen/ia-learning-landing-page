@@ -5,6 +5,7 @@
 
 .nav__logo {
     width: 33%;
+    max-width: 189px;
     position: absolute;
     left: 17px;
     z-index: 2;
@@ -46,10 +47,15 @@
     }
 }
 
-.nav__bottom__menu-icon {
-    height: 22px;
+.nav__bottom__menu-button {
+    width: 22px;
+    height: 20px;
     position: absolute;
     right: 21px;
     top: 50%;
     transform: translate(0, -50%);
+    background: url(images/icons/menu-icon.svg);
+    background-size: cover;
+    background-position: center;
+    border: none;
 }

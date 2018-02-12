@@ -14,10 +14,12 @@
 /* Slide top */
 .carousel__slide__top {
     position: relative;
+    overflow: hidden;
 }
 
 .carousel__slide-image {
     width: 100%;
+    min-height: 100%;
 }
 
 .carousel__slide-title {

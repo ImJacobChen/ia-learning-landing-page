@@ -1,0 +1,10 @@
+.dotted-separator {
+    height: 1px;
+    width: 100%;
+    border-top: 2px dotted navy;
+    margin: 20px auto;
+
+    &.small {
+        margin: 10px auto;
+    }
+}

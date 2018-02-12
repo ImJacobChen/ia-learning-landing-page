@@ -7,4 +7,20 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
     });
+
+    initDropdowns();
+
+    /** Return to top button */
+    $('#footer__return-to-top').click(function() {
+        $("html, body").animate({ scrollTop: "0px" });
+    });
+
+    /** Toggle overlay menu */
+    $('.nav__bottom__menu-button').on('click', function() {
+        $('.overlay-menu').toggleClass('active');
+    });
+
+    $('.overlay-menu__close-button').on('click', function() {
+        $('.overlay-menu').toggleClass('active');
+    });
 });

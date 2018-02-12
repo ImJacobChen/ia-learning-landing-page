@@ -1,0 +1,14 @@
+.square-link {
+    display: block;
+    margin: 5px auto;
+    color: $mint-green;
+    background: $navy;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $mint-green;
+    }
+}
