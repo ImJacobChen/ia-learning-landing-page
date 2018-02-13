@@ -55,9 +55,14 @@ gulp.task('images', function() {
 });
 
 gulp.task('scripts', function() {
+
+    /* Ordered so there are no missing dependencies from files. */
     return gulp.src([
         assetsSrc + '/scripts/jquery-3.3.1.min.js',
         assetsSrc + '/scripts/slick.min.js',
+        assetsSrc + '/scripts/headroom.js',
+        assetsSrc + '/scripts/jquery.headroom.js',
+        assetsSrc + '/scripts/jquery.waypoints.min.js',
         assetsSrc + '/scripts/dropdown.js',
         assetsSrc + '/scripts/app.js'
     ])

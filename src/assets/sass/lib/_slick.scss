@@ -166,3 +166,22 @@
         }
     }
 }
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: $tablet) {
+    .slick-prev,
+    .slick-next {
+        height: 54px;
+        width: 28px;
+        top: -140px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        background-size: 70% 70%;
+    }
+
+    .slick-dots {
+        padding: 4px 0;
+    }
+}

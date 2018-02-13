@@ -62,21 +62,41 @@
         <div class="carousel__slides">
             <div class="carousel__slide">
                 <div class="carousel__slide__top">
-                    <img src="images/welcome-to-the-learning-portal.png" alt="classroom" class="carousel__slide-image">
+                    <img src="images/banner1.jpg" alt="classroom" class="carousel__slide-image">
                     <h5 class="carousel__slide-title">Welcome to the IA Learning portal</h5>
                 </div>
                 <div class="carousel__slide__bottom">
-                    <p class="carousel__slide-subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eui</p>
+                    <p class="carousel__slide-subtext">IA LEARNING is the new home of eLearning for the investment management industry</p>
                 </div>
             </div>
 
             <div class="carousel__slide">
                 <div class="carousel__slide__top">
-                    <img src="images/welcome-to-the-learning-portal.png" alt="classroom" class="carousel__slide-image">
-                    <h5 class="carousel__slide-title">Welcome to the IA Learning portal</h5>
+                    <img src="images/banner2.jpg" alt="classroom" class="carousel__slide-image">
+                    <h5 class="carousel__slide-title">GCHQ Certified Training (GCT) Cyber Security Modules</h5>
                 </div>
                 <div class="carousel__slide__bottom">
-                    <p class="carousel__slide-subtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eui</p>
+                    <p class="carousel__slide-subtext">Covers protecting information, safe device use, managing online risks and keeping safe online. <a href="#">Find out more ></a></p>
+                </div>
+            </div>
+
+            <div class="carousel__slide">
+                <div class="carousel__slide__top">
+                    <img src="images/banner2.jpg" alt="classroom" class="carousel__slide-image">
+                    <h5 class="carousel__slide-title">Governance, Risk & Compliance (GRC) E-Learning library</h5>
+                </div>
+                <div class="carousel__slide__bottom">
+                    <p class="carousel__slide-subtext">ComplianceServe features over 50 scenario-based courses, including GDPR, SM&CR and MIFID II. <a href="#">Find out more ></a></p>
+                </div>
+            </div>
+
+            <div class="carousel__slide">
+                <div class="carousel__slide__top">
+                    <img src="images/banner2.jpg" alt="classroom" class="carousel__slide-image">
+                    <h5 class="carousel__slide-title">The easy solution to reach your organisation's goals</h5>
+                </div>
+                <div class="carousel__slide__bottom">
+                    <p class="carousel__slide-subtext">From Change Management, to Workplace Wellbeing we have the effective compact learning resources you need.</p>
                 </div>
             </div>
         </div>
@@ -88,18 +108,18 @@
     </div>
 
     <!-- Dropdowns -->
-    <section class="dropdowns">
+    <div class="dropdowns">
         <div class="container">
             
             <div class="row">
                 
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <!-- Dropdown (Why IA Learning?) -->
-                    <div class="dropdown">
+                    <div id="dropdown1" class="dropdown">
                         <div class="dropdown__main">
                             <div class="dropdown__main__left">
 
-                                <img class="dropdown__main__left__image" src="/images/thinking-graphic.svg" alt="Thinking man">
+                                <!-- <img class="dropdown__main__left__image" src="/images/gifs/thinking-man.gif" alt="Thinking man"> -->
 
                             </div><div class="dropdown__main__right"><!-- No space between so elements fit 50%/50% -->
 
@@ -159,13 +179,13 @@
                     <!-- End Dropdown (Why IA Learning?) -->
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <!-- Dropdown (Compliance - Serve) -->
-                    <div class="dropdown">
+                    <div id="dropdown2" class="dropdown">
                         <div class="dropdown__main">
                             <div class="dropdown__main__left">
 
-                                <img class="dropdown__main__left__image" src="/images/cogs-graphic.svg" alt="Machine cogs">
+                                <!-- <img class="dropdown__main__left__image" src="/images/gifs/cogs.gif" alt="Machine cogs"> -->
 
                             </div><div class="dropdown__main__right"><!-- No space between so elements fit 50%/50% -->
 
@@ -208,13 +228,13 @@
             
             <div class="row">
 
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <!-- Dropdown (Cyber security training) -->
-                    <div class="dropdown">
+                    <div id="dropdown3" class="dropdown">
                         <div class="dropdown__main">
                             <div class="dropdown__main__left">
 
-                                <img class="dropdown__main__left__image" src="/images/security-graphic.svg" alt="Cyber security">
+                                <!-- <img class="dropdown__main__left__image" src="/images/gifs/security.gif" alt="Cyber security"> -->
 
                             </div><div class="dropdown__main__right"><!-- No space between so elements fit 50%/50% -->
 
@@ -248,13 +268,13 @@
                     <!-- End Dropdown (Cyber security training) -->
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <!-- Dropdown (GCHQ Certified Training) -->
-                    <div class="dropdown">
+                    <div id="dropdown4" class="dropdown">
                         <div class="dropdown__main">
                             <div class="dropdown__main__left">
 
-                                <img class="dropdown__main__left__image" src="/images/badge-graphic.svg" alt="Award badges">
+                                <!-- <img class="dropdown__main__left__image" src="/images/gifs/awards.gif" alt="Award badges"> -->
 
                             </div><div class="dropdown__main__right"><!-- No space between so elements fit 50%/50% -->
 
@@ -296,7 +316,7 @@
 
             </div>
         </div>
-    </section>
+    </div>
     <!-- End Dropdowns -->
 
     <!-- CTA Banner -->
@@ -305,33 +325,53 @@
 
         </div>
         <div class="container z-index2 cta-banner__content">
-            <h5 class="white uppercase font-14 bold">Get started with IA learning</h5>
-            <h5 class="white uppercase font-18">Start your 14 day free trial today</h5>
-            <a class="uppercase cta-banner__button" href="#">Start your free <br> trial now ></a>
+            <h5 class="cta-banner__title cta-banner__title--bold">Get started with IA learning</h5>
+            <h5 class="cta-banner__title cta-banner__title--large">Start your 14 day free trial today</h5>
+            <a class="uppercase cta-banner__button" href="#">Start your free trial now ></a>
         </div>
     </section>
     <!-- End CTA Banner -->
 
     <footer>
-        <a class="square-link" href="#">Event Schedule ></a>
-        <a class="square-link" href="#">Training Schedule ></a>
-        <a class="square-link" href="#">Webinar Schedule ></a>
-        <a class="square-link" href="#">Join the IA ></a>
+        <div class="row">
+            <div class="col-md-3"><a class="square-link" href="#">Event Schedule ></a></div>
+            <div class="col-md-3"><a class="square-link" href="#">Training Schedule ></a></div>
+            <div class="col-md-3"><a class="square-link" href="#">Webinar Schedule ></a></div>
+            <div class="col-md-3"><a class="square-link" href="#">Join the IA ></a></div>
+        </div>
 
         <div class="dotted-separator"></div>
 
-        <ul>
-            <li><a href="#">Cookie policy</a></li>
-            <li><a href="#">Terms of use</a></li>
-            <li><a href="#">Privacy policy</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Glossary</a></li>
-            <li><a href="#">Member login</a></li>
-        </ul>
+        <div class="footer__below-dotted-separator">
+            <ul class="footer__mobile-links">
+                <li><a href="#">Cookie policy</a></li>
+                <li><a href="#">Terms of use</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Glossary</a></li>
+                <li><a href="#">Member login</a></li>
+            </ul>
 
-        <img src="/images/ivis-logo.png" alt="IVIS logo">
-        
-        <button id="footer__return-to-top" class="footer__return-to-top"></button>
+            <img src="/images/ivis-logo.png" alt="IVIS logo">
+
+            <p class="navy mt4 mb0">© The Investment Association MMXVIII</p>
+
+            <ul class="footer__tablet-links">
+                <li><a href="#">Cookie policy</a></li>
+                <li>|</li>
+                <li><a href="#">Terms of use</a></li>
+                <li>|</li>
+                <li><a href="#">Privacy policy</a></li>
+                <li>|</li>
+                <li><a href="#">Contact us</a></li>
+                <li>|</li>
+                <li><a href="#">Glossary</a></li>
+                <li>|</li>
+                <li><a href="#">Member login</a></li>
+            </ul>
+            
+            <button id="footer__return-to-top" class="footer__return-to-top"></button>
+        </div>
     </footer>
 
     <script src="script.js"></script>

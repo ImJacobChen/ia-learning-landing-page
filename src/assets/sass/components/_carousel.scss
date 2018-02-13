@@ -1,5 +1,5 @@
 .carousel {
-    
+    margin-top: 64px;
 }
 
 .carousel__slides {
@@ -9,17 +9,18 @@
 /* Carousel slide */
 .carousel__slide {
     position: relative;
+    
 }
 
 /* Slide top */
 .carousel__slide__top {
     position: relative;
     overflow: hidden;
+    max-height: 969px;
 }
 
 .carousel__slide-image {
     width: 100%;
-    min-height: 100%;
 }
 
 .carousel__slide-title {
@@ -47,4 +48,42 @@
 .carousel__navigation {
     background: #99FFCC;
     position: relative;
+}
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: $tablet) {
+    .carousel {
+        margin-top: 90px;
+    }
+
+    .carousel__slide-title {
+        max-width: 60%;
+        left: 118px;
+        bottom: 19px;
+        font-size: 80px;
+    }
+
+    /* Slide bottom */
+    .carousel__slide__bottom {
+        padding: 8px 123px;
+    }
+
+    .carousel__slide-subtext {
+        font-size: 24px;
+    }
+
+    .slick-prev,
+    .slick-next {
+        height: 38px;
+        top: -100px;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 15px;
+        background-size: 70% 70%;
+    }
+
+    .slick-dots {
+        padding: 4px 0;
+    }
 }

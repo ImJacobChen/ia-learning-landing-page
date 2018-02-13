@@ -21,8 +21,19 @@
     position: relative;
 }
 
-.cta-banner__content h5 {
+.cta-banner__title {
     margin: 10px auto;
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.cta-banner__title--large {
+    font-size: 18px;
+}
+
+.cta-banner__title--bold {
+    font-weight: bold;
 }
 
 .cta-banner__button {
@@ -34,4 +45,31 @@
     font-size: 16px;
     padding: 8px 18px;
     max-width: 160px;
+}
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: $tablet) {
+    .cta-banner {
+        padding: 94px 0;
+    }
+
+    .cta-banner__title {
+        font-size: 50px;
+    }
+    
+    .cta-banner__title--large {
+        font-size: 60px;
+    }
+    
+    .cta-banner__title--bold {
+    }
+
+    .cta-banner__button {
+        margin: 40px auto;
+        font-size: 30px;
+        padding: 14px 18px;
+        max-width: 610px;
+    }
 }

@@ -1,6 +1,23 @@
 .nav {
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: top .6s;
+
+    &.headroom--not-top {
+        top: -24px;
+
+        & > .nav__logo {
+            transform: translateY(24px);
+            max-width: 83px;
+            left: 20px;
+        }
+
+        & + .carousel {
+            margin-top: 66px;
+        }
+    }
 }
 
 .nav__logo {
@@ -9,6 +26,8 @@
     position: absolute;
     left: 17px;
     z-index: 2;
+
+    transition: max-width .3s;
 }
 
 /* Nav Top */
@@ -58,4 +77,64 @@
     background-size: cover;
     background-position: center;
     border: none;
+}
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: $tablet) {
+    .nav {
+    
+        &.headroom--not-top {
+            top: -33px;
+    
+            & > .nav__logo {
+                transform: translateY(33px);
+                max-width: 123px;
+                left: 123px;
+            }
+
+            & + .carousel {
+                margin-top: 57px;
+            }
+        }
+    }
+
+    /*************** 
+     * Nav 
+     */
+    .nav__logo {
+        left: 123px;
+    }
+
+    /* Nav Top */
+    .nav__top {
+        min-height: 33px;
+    }
+
+    .nav__top__ia-website-link {
+    
+        img {
+            height: 23px;
+        }
+    }
+
+    /* Nav Bottom */
+    .nav__bottom {
+        min-height: 57px;
+    }
+
+    .nav__bottom__free-trial-link {
+        right: 125px;
+
+        img {
+            height: 35px;
+        }
+    }
+
+    .nav__bottom__menu-button {
+        width: 40px;
+        height: 30px;
+        background-size: 100% 100%;
+    }
 }

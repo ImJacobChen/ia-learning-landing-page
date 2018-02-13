@@ -6,6 +6,7 @@ $(document).ready(function(){
         appendArrows: $('.carousel__navigation'),
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
+        mobileFirst: true,
     });
 
     initDropdowns();
@@ -22,5 +23,11 @@ $(document).ready(function(){
 
     $('.overlay-menu__close-button').on('click', function() {
         $('.overlay-menu').toggleClass('active');
+    });
+
+    /** Sticky header */
+    $('.nav').headroom({
+        "offset": 33,
+        "tolerance": 5,
     });
 });
