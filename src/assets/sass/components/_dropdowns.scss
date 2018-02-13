@@ -1,0 +1,196 @@
+.dropdowns {
+    padding: 20px 0;
+}
+
+.dropdown {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    border: 2px solid #CCCCCC;
+    margin: 10px 0;
+}
+
+/** Downdown main */
+.dropdown__main {
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .dropdown__main__button {
+            color: $navy;
+            background: $mint-green;
+        }
+    }
+}
+
+.dropdown__main__left {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    background: #50d4aa;
+}
+
+.dropdown__main__left__image {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.dropdown__main__right {
+    width: 50%;
+    display: inline-block;
+    padding: 18px 20px;
+}
+
+.dropdown__main__right h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #003333;
+    text-transform: uppercase;
+}
+
+.dropdown__main__button {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 9px 22px;
+    color: $mint-green;
+    background: $navy;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+/** Downdown content */
+.dropdown__content {
+    overflow: hidden;
+    position: relative;
+    font-family: AkkuratPro;
+    transition: max-height 1s;
+    max-height: 0px;
+    z-index: 3;
+    background: #fff;
+
+    &.active {
+        max-height: 800px;
+    }
+}
+
+.dropdown__content h5,
+.dropdown__content h6 {
+    font-family: AkkuratPro;
+}
+
+.dropdown__content b {
+    font-family: AkkuratPro;
+} 
+
+.dropdown__content p {
+    font-family: AkkuratPro;
+    font-weight: 300;
+}
+
+.dropdown__content ul {
+    list-style-type: none;
+    padding-left: 20px;
+
+    li {
+        position: relative;
+        font-family: AkkuratPro;
+        font-weight: 300;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            height: 15px;
+            width: 15px;
+            background: url(images/icons/tick-icon.svg);
+            background-position: center center;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.dropdown__content__halfsize-box {
+    width: 50%;
+    height: 100%;
+    min-height: 160px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.dropdown__content__halfsize-box p,
+.dropdown__content__halfsize-box b {
+    font-size: 14px;
+}
+
+.dropdown__content__halfsize-box img {
+    height: 61px;
+    margin: 5px 0;
+}
+
+.dropdown__content__container {
+    position: relative;
+    padding: 20px;
+    font-size: 15px;
+    color: #003333;
+}
+
+.dropdown__content__button {
+    width: 100%;
+    background: #fff;
+    color: #66CC99;
+    padding: 9px 22px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-top: 2px solid #003333;
+}
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: $tablet) {
+    .dropdown {
+        height: 180px;
+    }
+
+    .dropdown__main__left {
+        position: relative;
+    }
+    .dropdown__main__left__image {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .dropdown__main__right h3 {
+        font-size: 24px;
+    }
+
+    .dropdown__main__button {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .dropdown__main__left__image {
+        height: 100%;
+    }
+
+    .dropdown__main__right h3 {
+        font-size: 32px;
+    }
+}

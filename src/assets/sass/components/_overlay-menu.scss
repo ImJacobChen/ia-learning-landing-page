@@ -1,0 +1,133 @@
+.overlay-menu {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: $navy;
+
+    &.active {
+        display: block;
+
+        & > .overlay-menu__content {
+            
+            & > .overlay-menu__link,
+            & > ul,
+            & > .overlay-menu__social-icons {
+                animation-name: fadeIn;
+                animation-duration: .3s;
+                animation-fill-mode: forwards;
+            }
+
+        }
+    }
+}
+
+.overlay-menu__top {
+    position: relative;
+    min-height: 24px;
+    background: #333366;
+}
+
+.overlay-menu__top__ia-website-link {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(0, -50%);
+
+    img {
+        height: 16px;
+    }
+}
+
+.overlay-menu__content {
+    padding: 57px 0;
+}
+
+.overlay-menu__close-button {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 34px;
+    right: 20px;
+    border: none;
+    background: url(images/icons/cross-icon.svg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.overlay-menu__link {
+    display: block;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 8px 20px;
+    border-bottom: 1px solid #454d68;
+    opacity: 0;
+
+    &:hover {
+        color: $white;
+    }
+}
+
+.overlay-menu ul {
+    padding: 8px 20px;
+    list-style-type: none;
+    font-size: 14px;
+    border-bottom: 1px solid #454d68;
+    opacity: 0;
+
+    li {
+
+        a {
+            color: #525972;
+            transition: color .2s;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}
+
+.overlay-menu__social-icons {
+    opacity: 0;
+    padding: 8px 15px;
+}
+
+.overlay-menu__social-icon {
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: $tablet) {
+    .overlay-menu__top {
+        min-height: 33px;
+    }
+
+    .overlay-menu__top__ia-website-link {
+    
+        img {
+            height: 23px;
+        }
+    }
+
+    .overlay-menu__close-button {
+        width: 30px;
+        height: 30px;
+        top: 47px;
+        right: 24px;
+    }
+}
