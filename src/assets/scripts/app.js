@@ -7,6 +7,7 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         mobileFirst: true,
+        adaptiveHeight: true,
     });
 
     initDropdowns();
