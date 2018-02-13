@@ -10,6 +10,8 @@ var assetsSrc = './src/assets';
 
 gulp.task('default', ['serve']);
 
+gulp.task('build', ['html', 'sass', 'images', 'scripts', 'fonts']);
+
 gulp.task('serve', ['html', 'sass', 'images', 'scripts', 'fonts'], function() {
     browserSync.init({
         server: {
