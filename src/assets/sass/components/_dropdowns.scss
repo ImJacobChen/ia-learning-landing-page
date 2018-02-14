@@ -29,7 +29,7 @@
     height: 100%;
     display: inline-block;
     vertical-align: top;
-    background: #50d4aa;
+    background: $mint-green;
 }
 
 .dropdown__main__left__image {
@@ -47,7 +47,7 @@
 .dropdown__main__right h3 {
     margin: 0;
     font-size: 18px;
-    color: #003333;
+    color: $navy;
     text-transform: uppercase;
 }
 
@@ -73,7 +73,7 @@
     transition: max-height 1s;
     max-height: 0px;
     z-index: 3;
-    background: #fff;
+    background: $white;
 
     &.active {
         max-height: 800px;
@@ -140,19 +140,19 @@
     position: relative;
     padding: 20px;
     font-size: 15px;
-    color: #003333;
+    color: $navy;
 }
 
 .dropdown__content__button {
     width: 100%;
-    background: #fff;
-    color: #66CC99;
+    background: $white;
+    color: $mint-green;
     padding: 9px 22px;
     font-size: 14px;
     text-transform: uppercase;
     border: none;
     outline: none;
-    border-top: 2px solid #003333;
+    border-top: 2px solid $navy;
 }
 
 /*****************************

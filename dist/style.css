@@ -3308,6 +3308,15 @@ b {
   src: url(fonts/AkkuratPro-Bold.otf);
   font-weight: bold; }
 
+@font-face {
+  font-family: DotMatrix;
+  src: url(fonts/dotmat.ttf); }
+
+@font-face {
+  font-family: DotMatrix;
+  src: url(fonts/fonts/Dotmatrix-bold.ttf);
+  font-weight: bold; }
+
 .bold {
   font-weight: bold; }
 
@@ -3410,8 +3419,20 @@ b {
 .mint-green {
   color: #50d4aa; }
 
-.min-green-bg {
+.mint-green-bg {
   background-color: #50d4aa; }
+
+.light-mint-green {
+  color: #87E6C9; }
+
+.light-mint-green-bg {
+  background-color: #87E6C9; }
+
+.yellow {
+  color: #ffc015; }
+
+.yellow-bg {
+  background-color: #ffc015; }
 
 /* Variables */
 /*
@@ -4630,19 +4651,36 @@ b {
 
 .nav__logo {
   width: 33%;
-  max-width: 189px;
+  max-width: 133px;
   position: absolute;
   left: 17px;
   z-index: 2;
   -webkit-transition: max-width .3s;
   -o-transition: max-width .3s;
   transition: max-width .3s; }
+  .nav__logo p {
+    margin: 0;
+    padding: 3px 8px 0 8px;
+    width: 100%;
+    background: #000033;
+    color: #fff;
+    font-family: Dotmatrix;
+    font-size: 14px;
+    border: 1px solid #fff;
+    border-bottom: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    vertical-align: middle; }
+    .nav__logo p:last-of-type {
+      border-bottom: 1px solid #fff;
+      background: #50d4aa;
+      font-size: 11px; }
 
 /* Nav Top */
 .nav__top {
   position: relative;
   min-height: 24px;
-  background: #333366; }
+  background: #26304E; }
 
 .nav__top__ia-website-link {
   position: absolute;
@@ -4668,9 +4706,56 @@ b {
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
-  transform: translate(0, -50%); }
-  .nav__bottom__free-trial-link img {
-    height: 20px; }
+  transform: translate(0, -50%);
+  border: 2px dotted #ffc015;
+  color: white;
+  text-transform: uppercase;
+  line-height: 19px;
+  font-size: 13px;
+  padding: 0px 6px 0px 25px;
+  background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; }
+  .nav__bottom__free-trial-link:hover {
+    text-decoration: none;
+    color: #ffc015;
+    -webkit-animation-name: freeTrialLinkBackgroundSlide;
+    -o-animation-name: freeTrialLinkBackgroundSlide;
+    animation-name: freeTrialLinkBackgroundSlide;
+    -webkit-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-out;
+    -o-animation-timing-function: ease-out;
+    animation-timing-function: ease-out; }
+
+@-webkit-keyframes freeTrialLinkBackgroundSlide {
+  0% {
+    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; }
+  50% {
+    background: url(images/icons/download-icon.svg) 7% 1000%/17% no-repeat; }
+  51% {
+    background: url(images/icons/download-icon.svg) 7% -1000%/17% no-repeat; }
+  100% {
+    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; } }
+
+@-o-keyframes freeTrialLinkBackgroundSlide {
+  0% {
+    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; }
+  50% {
+    background: url(images/icons/download-icon.svg) 7% 1000%/17% no-repeat; }
+  51% {
+    background: url(images/icons/download-icon.svg) 7% -1000%/17% no-repeat; }
+  100% {
+    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; } }
+
+@keyframes freeTrialLinkBackgroundSlide {
+  0% {
+    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; }
+  50% {
+    background: url(images/icons/download-icon.svg) 7% 1000%/17% no-repeat; }
+  51% {
+    background: url(images/icons/download-icon.svg) 7% -1000%/17% no-repeat; }
+  100% {
+    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat; } }
 
 .nav__bottom__menu-button {
   width: 22px;
@@ -4707,7 +4792,8 @@ b {
      * Nav 
      */
   .nav__logo {
-    left: 123px; }
+    left: 123px;
+    max-width: 189px; }
   /* Nav Top */
   .nav__top {
     min-height: 33px; }
@@ -4753,7 +4839,7 @@ b {
 .overlay-menu__top {
   position: relative;
   min-height: 24px;
-  background: #333366; }
+  background: #26304E; }
 
 .overlay-menu__top__ia-website-link {
   position: absolute;
@@ -4861,12 +4947,14 @@ b {
 
 /* Slide bottom */
 .carousel__slide__bottom {
-  background: #66CC99;
+  background: #50d4aa;
   padding: 8px 19px; }
 
 .carousel__slide-subtext {
-  color: #003333;
+  color: #000033;
   margin: 0; }
+  .carousel__slide-subtext a {
+    color: #000033; }
 
 .carousel__navigation {
   background: #99FFCC;
@@ -4880,10 +4968,10 @@ b {
   .carousel {
     margin-top: 90px; }
   .carousel__slide-title {
-    max-width: 60%;
+    max-width: 90%;
     left: 118px;
     bottom: 19px;
-    font-size: 80px; }
+    font-size: 48px; }
   /* Slide bottom */
   .carousel__slide__bottom {
     padding: 8px 123px; }
@@ -4899,6 +4987,12 @@ b {
     background-size: 70% 70%; }
   .slick-dots {
     padding: 4px 0; } }
+
+@media screen and (min-width: 992px) {
+  .carousel__slide-title {
+    font-size: 76px; }
+  .carousel__slide-subtext {
+    text-align: center; } }
 
 .dropdowns {
   padding: 20px 0; }
@@ -4939,7 +5033,7 @@ b {
 .dropdown__main__right h3 {
   margin: 0;
   font-size: 18px;
-  color: #003333;
+  color: #000033;
   text-transform: uppercase; }
 
 .dropdown__main__button {
@@ -5019,18 +5113,18 @@ b {
   position: relative;
   padding: 20px;
   font-size: 15px;
-  color: #003333; }
+  color: #000033; }
 
 .dropdown__content__button {
   width: 100%;
   background: #fff;
-  color: #66CC99;
+  color: #50d4aa;
   padding: 9px 22px;
   font-size: 14px;
   text-transform: uppercase;
   border: none;
   outline: none;
-  border-top: 2px solid #003333; }
+  border-top: 2px solid #000033; }
 
 /*****************************
 * Responsive
@@ -5098,12 +5192,16 @@ b {
 .cta-banner__button {
   display: block;
   margin: 14px auto;
-  background: #fcc300;
+  background: #ffc015;
   border-radius: 0;
-  color: #000;
+  color: #000033;
   font-size: 16px;
   padding: 8px 18px;
   max-width: 160px; }
+  .cta-banner__button:hover {
+    text-decoration: none;
+    background: #000033;
+    color: #ffc015; }
 
 /*****************************
 * Responsive
@@ -5132,7 +5230,8 @@ b {
   text-transform: uppercase; }
   .square-link:hover {
     color: #000033;
-    background: #50d4aa; }
+    background: #50d4aa;
+    text-decoration: none; }
 
 .dotted-separator {
   height: 1px;

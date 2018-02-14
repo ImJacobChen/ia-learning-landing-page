@@ -1,31 +1,47 @@
 $grape: #515a71;
 .grape {
-    color: #515a71;
+    color: $grape;
 }
 .grape-bg {
-    background-color: #515a71;
+    background-color: $grape;
 }
 
 $white: #fff;
 .white {
-    color: #fff;
+    color: $white;
 }
 .white-bg {
-    background-color: #fff;
+    background-color: $white;
 }
 
 $navy: #000033;
 .navy {
-    color: #000033;
+    color: $navy;
 }
 .navy-bg {
-    background-color: #000033;
+    background-color: $navy;
 }
 
 $mint-green: #50d4aa;
 .mint-green {
-    color: #50d4aa;
+    color: $mint-green;
 }
-.min-green-bg {
-    background-color: #50d4aa;
+.mint-green-bg {
+    background-color: $mint-green;
+}
+
+$light-mint-green: #87E6C9;
+.light-mint-green {
+    color: $light-mint-green;
+}
+.light-mint-green-bg {
+    background-color: $light-mint-green;
+}
+
+$yellow: #ffc015;
+.yellow {
+    color: $yellow;
+}
+.yellow-bg {
+    background-color: $yellow;
 }

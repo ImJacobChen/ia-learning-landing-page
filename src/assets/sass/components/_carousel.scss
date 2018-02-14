@@ -36,13 +36,17 @@
 
 /* Slide bottom */
 .carousel__slide__bottom {
-    background: #66CC99;
+    background: $mint-green;
     padding: 8px 19px;
 }
 
 .carousel__slide-subtext {
-    color: #003333;
+    color: $navy;
     margin: 0;
+
+    a {
+        color: $navy;
+    }
 }
 
 .carousel__navigation {
@@ -60,10 +64,10 @@
     }
 
     .carousel__slide-title {
-        max-width: 60%;
+        max-width: 90%;
         left: 118px;
         bottom: 19px;
-        font-size: 80px;
+        font-size: 48px;
     }
 
     /* Slide bottom */
@@ -86,5 +90,14 @@
 
     .slick-dots {
         padding: 4px 0;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .carousel__slide-title {
+        font-size: 76px;
+    }
+    .carousel__slide-subtext {
+        text-align: center;
     }
 }
