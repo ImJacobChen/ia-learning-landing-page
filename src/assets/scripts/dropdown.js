@@ -1,18 +1,17 @@
 function initDropdowns() {
+    // Main button
     $('.dropdown__main').on('click', function() {
         var dropdownContent = $(this).next('.dropdown__content');
         dropdownContent.toggleClass('active');
 
         if (dropdownContent.hasClass('active')) {
             $(this).find('.dropdown__main__button').text('See less >');
-            $('html, body').animate({ 
-                scrollTop: $(dropdownContent).offset().top - 200 
-            });
         } else {
             $(this).find('.dropdown__main__button').text('See more >');
         }
     });
 
+    // Content button
     $('.dropdown__content__button').on('click', function() {
         var dropdownContent = $(this).parent();
         dropdownContent.toggleClass('active');
@@ -24,6 +23,7 @@ function initDropdowns() {
         }
     });
 
+    // Gif animations
     var dropdown1HasBeenActivated = false;
     new Waypoint({
         element: document.getElementById('dropdown1'),

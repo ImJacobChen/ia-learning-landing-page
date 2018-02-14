@@ -21,6 +21,11 @@
 
 .carousel__slide-image {
     width: 100%;
+    display: none !important;
+}
+
+.carousel__slide-image--mobile {
+    width: 100%;
 }
 
 .carousel__slide-title {
@@ -58,6 +63,15 @@
 /*****************************
 * Responsive
 ***************************/
+@media screen and (min-width: 545px) {
+    .carousel__slide-image {
+        display: block !important;
+    }
+    
+    .carousel__slide-image--mobile {
+        display: none !important;
+    }
+}
 @media screen and (min-width: $tablet) {
     .carousel {
         margin-top: 90px;
@@ -67,7 +81,7 @@
         max-width: 90%;
         left: 118px;
         bottom: 19px;
-        font-size: 48px;
+        font-size: 42px;
     }
 
     /* Slide bottom */
