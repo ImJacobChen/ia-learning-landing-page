@@ -3434,6 +3434,9 @@ b {
 .yellow-bg {
   background-color: #ffc015; }
 
+.yellow-fill {
+  fill: #ffc015; }
+
 /* Variables */
 /*
     SPACING
@@ -4712,7 +4715,7 @@ b {
 
 .nav__bottom__free-trial-link {
   position: absolute;
-  right: 60px;
+  right: 21px;
   top: 50%;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -4815,7 +4818,7 @@ b {
   .nav__bottom {
     min-height: 57px; }
   .nav__bottom__free-trial-link {
-    right: 125px;
+    right: 21px;
     height: 35px;
     line-height: 32px;
     font-size: 25px;
@@ -5307,8 +5310,26 @@ footer {
   position: relative;
   padding: 20px; }
 
-.footer__below-dotted-separator {
+.footer__section-below-dotted-separator {
   position: relative; }
+
+.footer__social-media-links {
+  margin-bottom: 4px; }
+  .footer__social-media-links a {
+    width: 32px;
+    height: 32px; }
+    .footer__social-media-links a:hover {
+      text-decoration: none; }
+      .footer__social-media-links a:hover > .footer__social-media-links__image--active {
+        display: inline-block; }
+      .footer__social-media-links a:hover > .footer__social-media-links__image {
+        display: none; }
+    .footer__social-media-links a img {
+      width: 32px;
+      height: 32px; }
+
+.footer__social-media-links__image--active {
+  display: none; }
 
 .footer__mobile-links {
   padding: 0;
@@ -5345,7 +5366,7 @@ footer {
   border-radius: 50%;
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 0;
   background: #8a92a0 url(images/icons/up-arrow.svg) no-repeat center 13px/70%;
   border: none; }
   .footer__return-to-top:hover {
@@ -5357,12 +5378,25 @@ footer {
 @media screen and (min-width: 768px) {
   footer {
     padding: 20px 20px 10px 20px; }
+  .footer__social-media-links {
+    position: absolute;
+    right: 90px; }
+    .footer__social-media-links a {
+      width: 50px;
+      height: 50px; }
+      .footer__social-media-links a img {
+        width: 50px;
+        height: 50px; }
   .footer__mobile-links {
     display: none; }
   .footer__tablet-links {
     display: block; }
   .footer__return-to-top {
     top: 0px; } }
+
+@media screen and (min-width: 992px) {
+  .footer__social-media-links {
+    right: 334px; } }
 
 /* Slider */
 .slick-slider {
