@@ -5,6 +5,9 @@ function initDropdowns() {
 
         if (dropdownContent.hasClass('active')) {
             $(this).find('.dropdown__main__button').text('See less >');
+            $('html, body').animate({ 
+                scrollTop: $(dropdownContent).offset().top - 200 
+            });
         } else {
             $(this).find('.dropdown__main__button').text('See more >');
         }
