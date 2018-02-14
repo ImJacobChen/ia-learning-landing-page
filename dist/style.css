@@ -5304,6 +5304,83 @@ b {
     background: #50d4aa;
     text-decoration: none; }
 
+.share-icons {
+  width: 100%;
+  margin: 10px 0; }
+
+.share-icons__icon-container {
+  height: 48px;
+  width: 25%;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .share-icons__icon-container > .share-icons__mask {
+    width: 12%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none; }
+
+.share-icons__icon-container--facebook {
+  background: #3B5998 url(images/icons/facebook-f.svg) no-repeat center center/50% 50%; }
+  .share-icons__icon-container--facebook > .share-icons__mask {
+    background-color: #3B5998; }
+
+.share-icons__icon-container--twitter {
+  background: #55acee url(images/icons/twitter-bird.svg) no-repeat center center/50% 50%; }
+  .share-icons__icon-container--twitter > .share-icons__mask {
+    background-color: #55acee; }
+
+.share-icons__icon-container--linkedin {
+  background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat center center/50% 50%; }
+  .share-icons__icon-container--linkedin > .share-icons__mask {
+    background-color: #0077b5; }
+
+.share-icons__icon-container--email {
+  background: #7d7d7d url(images/icons/envelope2.svg) no-repeat center center/50% 50%; }
+  .share-icons__icon-container--email > .share-icons__mask {
+    background-color: #7d7d7d; }
+
+.share-icons__icon-cta {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 0.5px;
+  position: relative;
+  left: -35px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  font-size: 17px; }
+
+/*****************************
+* Responsive
+***************************/
+@media screen and (min-width: 768px) {
+  .share-icons {
+    position: fixed;
+    top: 160px;
+    left: 0; }
+  .share-icons__icon-container {
+    width: 48px;
+    display: block;
+    padding: 12px;
+    position: relative; }
+    .share-icons__icon-container:hover {
+      width: 120px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      background-position-x: left; }
+      .share-icons__icon-container:hover > .share-icons__icon-cta {
+        opacity: 1;
+        left: 39px; }
+    .share-icons__icon-container > .share-icons__mask {
+      display: block; } }
+
 .dotted-separator {
   height: 1px;
   width: 100%;
