@@ -172,9 +172,32 @@
 
     .nav__bottom__free-trial-link {
         right: 125px;
-
-        img {
-            height: 35px;
+        height: 35px;
+        line-height: 32px;
+        font-size: 25px;
+        padding: 0px 22px 0px 48px;
+        background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat;
+    
+        &:hover {
+            text-decoration: none;
+            color: $yellow;
+            animation-name: freeTrialLinkBackgroundSlide;
+            animation-duration: .7s;
+            animation-timing-function: cubic-bezier(.25,.75,.5,1.25);
+        }
+    }
+    @keyframes freeTrialLinkBackgroundSlide {
+        0% {
+            background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat;
+        }
+        50% {
+            background: url(images/icons/download-icon.svg) 10% 1000%/14% no-repeat;
+        }
+        51% {
+            background: url(images/icons/download-icon.svg) 10% -1000%/14% no-repeat;
+        }
+        100% {
+            background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat;
         }
     }
 

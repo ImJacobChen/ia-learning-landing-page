@@ -4803,9 +4803,51 @@ b {
   .nav__bottom {
     min-height: 57px; }
   .nav__bottom__free-trial-link {
-    right: 125px; }
-    .nav__bottom__free-trial-link img {
-      height: 35px; }
+    right: 125px;
+    height: 35px;
+    line-height: 32px;
+    font-size: 25px;
+    padding: 0px 22px 0px 48px;
+    background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; }
+    .nav__bottom__free-trial-link:hover {
+      text-decoration: none;
+      color: #ffc015;
+      -webkit-animation-name: freeTrialLinkBackgroundSlide;
+      -o-animation-name: freeTrialLinkBackgroundSlide;
+      animation-name: freeTrialLinkBackgroundSlide;
+      -webkit-animation-duration: .7s;
+      -o-animation-duration: .7s;
+      animation-duration: .7s;
+      -webkit-animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25);
+      -o-animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25);
+      animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25); }
+  @-webkit-keyframes freeTrialLinkBackgroundSlide {
+    0% {
+      background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; }
+    50% {
+      background: url(images/icons/download-icon.svg) 10% 1000%/14% no-repeat; }
+    51% {
+      background: url(images/icons/download-icon.svg) 10% -1000%/14% no-repeat; }
+    100% {
+      background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; } }
+  @-o-keyframes freeTrialLinkBackgroundSlide {
+    0% {
+      background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; }
+    50% {
+      background: url(images/icons/download-icon.svg) 10% 1000%/14% no-repeat; }
+    51% {
+      background: url(images/icons/download-icon.svg) 10% -1000%/14% no-repeat; }
+    100% {
+      background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; } }
+  @keyframes freeTrialLinkBackgroundSlide {
+    0% {
+      background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; }
+    50% {
+      background: url(images/icons/download-icon.svg) 10% 1000%/14% no-repeat; }
+    51% {
+      background: url(images/icons/download-icon.svg) 10% -1000%/14% no-repeat; }
+    100% {
+      background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; } }
   .nav__bottom__menu-button {
     width: 40px;
     height: 30px;
@@ -4990,9 +5032,7 @@ b {
 
 @media screen and (min-width: 992px) {
   .carousel__slide-title {
-    font-size: 76px; }
-  .carousel__slide-subtext {
-    text-align: center; } }
+    font-size: 76px; } }
 
 .dropdowns {
   padding: 30px 0 20px 0; }
@@ -5441,12 +5481,12 @@ footer {
 @media screen and (min-width: 768px) {
   .slick-prev,
   .slick-next {
-    height: 54px;
-    width: 28px;
-    top: -140px;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 15px;
-    -webkit-background-size: 70% 70%;
-    background-size: 70% 70%; }
+    height: 38px;
+    width: 20px;
+    top: -147px; }
+  .slick-prev {
+    background: url(images/icons/prev-arrow.svg) no-repeat; }
+  .slick-next {
+    background: url(images/icons/next-arrow.svg) no-repeat; }
   .slick-dots {
     padding: 4px 0; } }

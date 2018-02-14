@@ -173,12 +173,15 @@
 @media screen and (min-width: $tablet) {
     .slick-prev,
     .slick-next {
-        height: 54px;
-        width: 28px;
-        top: -140px;
-        background-color: rgba(0, 0, 0, 0.2);
-        padding: 15px;
-        background-size: 70% 70%;
+        height: 38px;
+        width: 20px;
+        top: -147px;
+    }
+    .slick-prev {
+        background: url(images/icons/prev-arrow.svg) no-repeat;
+    }
+    .slick-next {
+        background: url(images/icons/next-arrow.svg) no-repeat;
     }
 
     .slick-dots {
