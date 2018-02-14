@@ -4633,7 +4633,7 @@ b {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   -webkit-transition: top .6s;
   -o-transition: top .6s;
   transition: top .6s; }
@@ -4861,7 +4861,7 @@ b {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 5;
   background: #000033; }
   .overlay-menu.active {
     display: block; }
