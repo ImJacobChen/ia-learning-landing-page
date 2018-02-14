@@ -39,12 +39,18 @@
 .cta-banner__button {
     display: block;
     margin: 14px auto;
-    background: #fcc300;
+    background: $yellow;
     border-radius: 0;
-    color: #000;
+    color: $navy;
     font-size: 16px;
     padding: 8px 18px;
     max-width: 160px;
+
+    &:hover {
+        text-decoration: none;
+        background: $navy;
+        color: $yellow;
+    }
 }
 
 /*****************************

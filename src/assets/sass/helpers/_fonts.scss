@@ -23,6 +23,16 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: DotMatrix;
+    src: url(fonts/dotmat.ttf);
+}
+@font-face {
+    font-family: DotMatrix;
+    src: url(fonts/fonts/Dotmatrix-bold.ttf);
+    font-weight: bold;
+}
+
 .bold { font-weight: bold; }
 .uppercase { text-transform: uppercase; }
 

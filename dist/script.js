@@ -41,10 +41,11 @@ function initDropdowns() {
         }
     });
 
+    var dropdown1HasBeenActivated = false;
     new Waypoint({
         element: document.getElementById('dropdown1'),
         handler: (function(direction) {
-            if (direction = 'down') {
+            if (direction = 'down' && !dropdown1HasBeenActivated) {
                 var dropdownMainLeft = this.element.getElementsByClassName('dropdown__main__left')[0];
                 var img = document.createElement('img');
                 img.className = 'dropdown__main__left__image';
@@ -53,9 +54,26 @@ function initDropdowns() {
 
                 dropdownMainLeft.appendChild(img);
                 this.enabled = false;
+                dropdown1HasBeenActivated = true;
             }
         }),
         offset: '78%',
+    });
+    $('#dropdown1').mouseenter(function() {
+        var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
+        if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
+            dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
+            dropdownMainLeftImage.src = '/images/gifs/thinking-man.gif';
+            dropdown1HasBeenActivated = true;
+        } else {
+            var img = document.createElement('img');
+            img.className = 'dropdown__main__left__image';
+            img.src = '/images/gifs/thinking-man.gif';
+            img.alt = 'Thinking man';
+
+            dropdownMainLeft.appendChild(img);
+            dropdown1HasBeenActivated = true;
+        }
     });
 
     new Waypoint({
@@ -74,6 +92,22 @@ function initDropdowns() {
         }),
         offset: '78%'
     });
+    $('#dropdown2').mouseenter(function() {
+        var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
+        if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
+            dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
+            dropdownMainLeftImage.src = '/images/gifs/cogs.gif';
+            dropdown1HasBeenActivated = true;
+        } else {
+            var img = document.createElement('img');
+            img.className = 'dropdown__main__left__image';
+            img.src = '/images/gifs/cogs.gif';
+            img.alt = 'Machine cogs';
+
+            dropdownMainLeft.appendChild(img);
+            dropdown1HasBeenActivated = true;
+        }
+    });
 
     new Waypoint({
         element: document.getElementById('dropdown3'),
@@ -91,6 +125,22 @@ function initDropdowns() {
         }),
         offset: '78%'
     });
+    $('#dropdown3').mouseenter(function() {
+        var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
+        if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
+            dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
+            dropdownMainLeftImage.src = '/images/gifs/security.gif';
+            dropdown1HasBeenActivated = true;
+        } else {
+            var img = document.createElement('img');
+            img.className = 'dropdown__main__left__image';
+            img.src = '/images/gifs/security.gif';
+            img.alt = 'Cyber security';
+
+            dropdownMainLeft.appendChild(img);
+            dropdown1HasBeenActivated = true;
+        }
+    });
 
     new Waypoint({
         element: document.getElementById('dropdown4'),
@@ -107,6 +157,22 @@ function initDropdowns() {
             }
         }),
         offset: '78%'
+    });
+    $('#dropdown4').mouseenter(function() {
+        var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
+        if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
+            dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
+            dropdownMainLeftImage.src = '/images/gifs/awards.gif';
+            dropdown1HasBeenActivated = true;
+        } else {
+            var img = document.createElement('img');
+            img.className = 'dropdown__main__left__image';
+            img.src = '/images/gifs/awards.gif';
+            img.alt = 'Award badges';
+
+            dropdownMainLeft.appendChild(img);
+            dropdown1HasBeenActivated = true;
+        }
     });
 }
 $(document).ready(function(){
