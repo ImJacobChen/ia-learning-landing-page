@@ -86,28 +86,28 @@
     line-height: 19px;
     font-size: 13px;
     padding: 0px 6px 0px 25px;
-    background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat;
+    background: url(images/icons/download-icon.svg) 8% 50%/17% no-repeat;
 
     &:hover {
         text-decoration: none;
         color: $yellow;
         animation-name: freeTrialLinkBackgroundSlide;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
+        animation-duration: .7s;
+        animation-timing-function: cubic-bezier(.25,.75,.5,1.25);
     }
 }
 @keyframes freeTrialLinkBackgroundSlide {
     0% {
-        background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat;
+        background: url(images/icons/download-icon.svg) 8% 50%/17% no-repeat;
     }
     50% {
-        background: url(images/icons/download-icon.svg) 7% 1000%/17% no-repeat;
+        background: url(images/icons/download-icon.svg) 8% 1000%/17% no-repeat;
     }
     51% {
-        background: url(images/icons/download-icon.svg) 7% -1000%/17% no-repeat;
+        background: url(images/icons/download-icon.svg) 8% -1000%/17% no-repeat;
     }
     100% {
-        background: url(images/icons/download-icon.svg) 7% 50%/17% no-repeat;
+        background: url(images/icons/download-icon.svg) 8% 50%/17% no-repeat;
     }
 }
 

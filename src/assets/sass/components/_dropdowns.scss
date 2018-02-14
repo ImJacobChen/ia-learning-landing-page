@@ -1,18 +1,17 @@
 .dropdowns {
-    padding: 20px 0;
+    padding: 30px 0 20px 0;
 }
 
 .dropdown {
     width: 100%;
-    height: 100px;
     position: relative;
     border: 2px solid #CCCCCC;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
 }
 
 /** Downdown main */
 .dropdown__main {
-    height: 100%;
+    height: 100px;
     position: relative;
     cursor: pointer;
 
@@ -159,7 +158,7 @@
 * Responsive
 ***************************/
 @media screen and (min-width: $tablet) {
-    .dropdown {
+    .dropdown__main {
         height: 180px;
     }
 
