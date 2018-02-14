@@ -10,7 +10,7 @@
 
         & > .nav__logo {
             transform: translateY(24px);
-            max-width: 83px;
+            max-width: 82px;
             left: 20px;
         }
 
@@ -22,7 +22,7 @@
 
 .nav__logo {
     width: 33%;
-    max-width: 133px;
+    max-width: 132px;
     position: absolute;
     left: 17px;
     z-index: 2;
@@ -59,12 +59,21 @@
 
 .nav__top__ia-website-link {
     position: absolute;
-    top: 50%;
+    top: 54%;
     right: 20px;
     transform: translate(0, -50%);
+    font-size: 13px;
+    text-decoration: none;
+    color: $white;
+    background: url(images/icons/house-icon.svg) 100% 30%/22% no-repeat;
+    opacity: 0.3;
+    padding-right: 20px;
+    transition: .1s;
 
-    img {
-        height: 16px;
+    &:hover {
+        text-decoration: none;
+        color: $white;
+        opacity: 1;
     }
 }
 
@@ -135,7 +144,7 @@
     
             & > .nav__logo {
                 transform: translateY(33px);
-                max-width: 123px;
+                max-width: 117px;
                 left: 123px;
             }
 
@@ -150,7 +159,7 @@
      */
     .nav__logo {
         left: 123px;
-        max-width: 189px;
+        max-width: 186px;
     }
 
     /* Nav Top */
@@ -159,10 +168,8 @@
     }
 
     .nav__top__ia-website-link {
-    
-        img {
-            height: 23px;
-        }
+        font-size: 17px;
+        padding-right: 24px;
     }
 
     /* Nav Bottom */

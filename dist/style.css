@@ -4644,14 +4644,14 @@ b {
       -ms-transform: translateY(24px);
       -o-transform: translateY(24px);
       transform: translateY(24px);
-      max-width: 83px;
+      max-width: 82px;
       left: 20px; }
     .nav.headroom--not-top + .carousel {
       margin-top: 66px; }
 
 .nav__logo {
   width: 33%;
-  max-width: 133px;
+  max-width: 132px;
   position: absolute;
   left: 17px;
   z-index: 2;
@@ -4684,14 +4684,25 @@ b {
 
 .nav__top__ia-website-link {
   position: absolute;
-  top: 50%;
+  top: 54%;
   right: 20px;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   -o-transform: translate(0, -50%);
-  transform: translate(0, -50%); }
-  .nav__top__ia-website-link img {
-    height: 16px; }
+  transform: translate(0, -50%);
+  font-size: 13px;
+  text-decoration: none;
+  color: #fff;
+  background: url(images/icons/house-icon.svg) 100% 30%/22% no-repeat;
+  opacity: 0.3;
+  padding-right: 20px;
+  -webkit-transition: .1s;
+  -o-transition: .1s;
+  transition: .1s; }
+  .nav__top__ia-website-link:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 1; }
 
 /* Nav Bottom */
 .nav__bottom {
@@ -4784,7 +4795,7 @@ b {
       -ms-transform: translateY(33px);
       -o-transform: translateY(33px);
       transform: translateY(33px);
-      max-width: 123px;
+      max-width: 117px;
       left: 123px; }
     .nav.headroom--not-top + .carousel {
       margin-top: 57px; }
@@ -4793,12 +4804,13 @@ b {
      */
   .nav__logo {
     left: 123px;
-    max-width: 189px; }
+    max-width: 186px; }
   /* Nav Top */
   .nav__top {
     min-height: 33px; }
-  .nav__top__ia-website-link img {
-    height: 23px; }
+  .nav__top__ia-website-link {
+    font-size: 17px;
+    padding-right: 24px; }
   /* Nav Bottom */
   .nav__bottom {
     min-height: 57px; }
@@ -4975,6 +4987,10 @@ b {
   max-height: 969px; }
 
 .carousel__slide-image {
+  width: 100%;
+  display: none !important; }
+
+.carousel__slide-image--mobile {
   width: 100%; }
 
 .carousel__slide-title {
@@ -5006,6 +5022,12 @@ b {
 /*****************************
 * Responsive
 ***************************/
+@media screen and (min-width: 545px) {
+  .carousel__slide-image {
+    display: block !important; }
+  .carousel__slide-image--mobile {
+    display: none !important; } }
+
 @media screen and (min-width: 768px) {
   .carousel {
     margin-top: 90px; }
@@ -5013,7 +5035,7 @@ b {
     max-width: 90%;
     left: 118px;
     bottom: 19px;
-    font-size: 48px; }
+    font-size: 42px; }
   /* Slide bottom */
   .carousel__slide__bottom {
     padding: 8px 123px; }
@@ -5100,7 +5122,7 @@ b {
   z-index: 3;
   background: #fff; }
   .dropdown__content.active {
-    max-height: 800px; }
+    max-height: 1100px; }
 
 .dropdown__content h5,
 .dropdown__content h6 {
@@ -5198,7 +5220,7 @@ b {
 .cta-banner {
   padding: 32px 0;
   position: relative;
-  background: url(images/cta-banner-image.png) no-repeat;
+  background: url(images/free-trial-image.jpg) no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
