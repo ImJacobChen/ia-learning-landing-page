@@ -50,7 +50,14 @@
     &:hover {
         text-decoration: none;
         background: $navy;
-        color: $yellow;
+        color: $yellow !important;
+    }
+
+    &:visited,
+    &:active,
+    &:focus {
+        text-decoration: none;
+        color: $navy;
     }
 }
 

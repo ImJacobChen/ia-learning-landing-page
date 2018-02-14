@@ -4826,7 +4826,7 @@ b {
     background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; }
     .nav__bottom__free-trial-link:hover {
       text-decoration: none;
-      color: #ffc015;
+      color: #ffc015 !important;
       -webkit-animation-name: freeTrialLinkBackgroundSlide;
       -o-animation-name: freeTrialLinkBackgroundSlide;
       animation-name: freeTrialLinkBackgroundSlide;
@@ -4836,6 +4836,9 @@ b {
       -webkit-animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25);
       -o-animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25);
       animation-timing-function: cubic-bezier(0.25, 0.75, 0.5, 1.25); }
+    .nav__bottom__free-trial-link:visited, .nav__bottom__free-trial-link:active, .nav__bottom__free-trial-link:focus {
+      text-decoration: none;
+      color: #fff; }
   @-webkit-keyframes freeTrialLinkBackgroundSlide {
     0% {
       background: url(images/icons/download-icon.svg) 10% 50%/14% no-repeat; }
@@ -5266,7 +5269,10 @@ b {
   .cta-banner__button:hover {
     text-decoration: none;
     background: #000033;
-    color: #ffc015; }
+    color: #ffc015 !important; }
+  .cta-banner__button:visited, .cta-banner__button:active, .cta-banner__button:focus {
+    text-decoration: none;
+    color: #000033; }
 
 /*****************************
 * Responsive
@@ -5396,7 +5402,7 @@ footer {
 
 @media screen and (min-width: 992px) {
   .footer__social-media-links {
-    right: 334px; } }
+    right: 388px; } }
 
 /* Slider */
 .slick-slider {
