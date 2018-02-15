@@ -26,7 +26,14 @@ gulp.task('serve', ['html', 'sass', 'images', 'scripts', 'fonts'], function() {
 });
 
 gulp.task('html', function() {
-    gulp.src('./src/index.html')
+    gulp.src([
+        './src/index.html',
+        './src/favicon.ico',
+        './src/humans.txt',
+        './src/robots.txt',
+        './src/manifest.json',
+        './src/manifest.webapp',
+    ])
         .pipe(gulp.dest('./dist/'));
 });
 
