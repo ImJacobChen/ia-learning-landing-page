@@ -187,10 +187,17 @@
     
         &:hover {
             text-decoration: none;
-            color: $yellow;
+            color: $yellow !important;
             animation-name: freeTrialLinkBackgroundSlide;
             animation-duration: .7s;
             animation-timing-function: cubic-bezier(.25,.75,.5,1.25);
+        }
+
+        &:visited,
+        &:active,
+        &:focus {
+            text-decoration: none;
+            color: $white;
         }
     }
     @keyframes freeTrialLinkBackgroundSlide {
