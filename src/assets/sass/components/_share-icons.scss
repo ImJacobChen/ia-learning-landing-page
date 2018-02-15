@@ -20,28 +20,28 @@
     }
 }
 .share-icons__icon-container--facebook {
-    background: #3B5998 url(images/icons/facebook-f.svg) no-repeat center center/50% 50%;
+    background: #3B5998 url(images/icons/facebook-f.svg) no-repeat left center/50% 50%;
     
     & > .share-icons__mask {
         background-color: #3B5998;
     }
 }
 .share-icons__icon-container--twitter {
-    background: #55acee url(images/icons/twitter-bird.svg) no-repeat center center/50% 50%;
+    background: #55acee url(images/icons/twitter-bird.svg) no-repeat left center/50% 50%;
     
     & > .share-icons__mask {
         background-color: #55acee;
     }
 }
 .share-icons__icon-container--linkedin {
-    background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat center center/50% 50%;
+    background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat left center/50% 50%;
     
     & > .share-icons__mask {
         background-color: #0077b5;
     }
 }
 .share-icons__icon-container--email {
-    background: #7d7d7d url(images/icons/envelope2.svg) no-repeat center center/50% 50%;
+    background: #7d7d7d url(images/icons/envelope2.svg) no-repeat left center/50% 50%;
     
     & > .share-icons__mask {
         background-color: #7d7d7d;
@@ -54,8 +54,8 @@
     vertical-align: middle;
     letter-spacing: 0.5px;
     position: relative;
-    left: -35px;
-    opacity: 0;
+    left: 45%;
+    top: 12px;
     transition: all 0.2s ease-in;
     font-size: 17px;
 }
@@ -92,17 +92,22 @@
             display: block;
         }
     }
+    .share-icons__icon-container--facebook {
+        background: #3B5998 url(images/icons/facebook-f.svg) no-repeat center center/50% 50%;
+    }
+    .share-icons__icon-container--twitter {
+        background: #55acee url(images/icons/twitter-bird.svg) no-repeat center center/50% 50%;
+    }
+    .share-icons__icon-container--linkedin {
+        background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat center center/50% 50%;
+    }
+    .share-icons__icon-container--email {
+        background: #7d7d7d url(images/icons/envelope2.svg) no-repeat center center/50% 50%;
+    }
 
-    // .share-icons__icon-container--facebook:hover {
-    //     background: #3B5998 url(images/icons/facebook-f.svg) no-repeat 10% 50%/100% 50%;
-    // }
-    // .share-icons__icon-container--twitter:hover {
-    //     background: #55acee url(images/icons/twitter-bird.svg) no-repeat 10% 50%/100% 50%;
-    // }
-    // .share-icons__icon-container--linkedin:hover {
-    //     background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat 10% 50%/100% 50%;
-    // }
-    // .share-icons__icon-container--email:hover {
-    //     background: #7d7d7d url(images/icons/envelope2.svg) no-repeat 10% 50%/100% 50%;
-    // }
+    .share-icons__icon-cta {
+        opacity: 0;
+        left: -35px;
+        top: 0px;
+    }
 }
