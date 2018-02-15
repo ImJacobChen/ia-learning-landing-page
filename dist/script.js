@@ -180,7 +180,7 @@ function initDropdowns() {
 }
 $(document).ready(function(){
     $('.carousel__slides').slick({
-        //autoplay: true,
+        autoplay: true,
         dots: true,
         appendDots: $('.carousel__navigation'),
         appendArrows: $('.carousel__navigation'),
