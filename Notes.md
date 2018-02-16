@@ -1,4 +1,7 @@
-##Old nav overlay html
+### Resilia link brochure link: http://unicorntraining.com/uploads/docs/RESILIA_Product_Brochure-v1.0.pdf
+
+
+## Old nav overlay html
 ```
 <div class="overlay-menu">
     <div class="overlay-menu__top">
@@ -55,6 +58,69 @@ to
 @media screen and (min-width: $tablet) {
     .dropdown__main {
         height: 180px;
+    }
+}
+```
+
+## Old carousel html & css
+```
+<div class="carousel__slide">
+    <div class="carousel__slide__top">
+        <img src="images/banner1.jpg" alt="Learning" class="carousel__slide-image">
+        <img src="images/banner1-mobile.jpg" alt="Learning" class="carousel__slide-image--mobile">
+        <h5 class="carousel__slide-title">Welcome to the IA Learning portal</h5>
+    </div>
+    <div class="carousel__slide__bottom">
+        <p class="carousel__slide-subtext">IA LEARNING is the new home of eLearning for the investment management industry</p>
+    </div>
+</div>
+
+.carousel__slide-title {
+    width: 80%;
+    position: absolute;
+    left: 19px;
+    bottom: 19px;
+    z-index: 2;
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.carousel__slide__bottom {
+    background: $mint-green;
+    padding: 8px 19px;
+}
+
+.carousel__slide-subtext {
+    color: $navy;
+    margin: 0;
+
+    a {
+        color: $navy;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .carousel__slide-title {
+        max-width: 90%;
+        left: 118px;
+        bottom: 19px;
+        font-size: 42px;
+    }
+
+    /* Slide bottom */
+    .carousel__slide__bottom {
+        padding: 8px 123px;
+    }
+
+    .carousel__slide-subtext {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .carousel__slide-title {
+        font-size: 76px;
     }
 }
 ```

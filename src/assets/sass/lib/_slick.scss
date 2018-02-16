@@ -109,20 +109,20 @@
 }
 .slick-prev {
     left: 9px;
-    background: #99FFCC url(images/icons/prev-arrow.svg);
+    background: $mint-green url(images/icons/prev-arrow.svg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
 .slick-next {
     right: 9px;
-    background: #99FFCC url(images/icons/next-arrow.svg);
+    background: $mint-green url(images/icons/next-arrow.svg);
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: no-repeat;
 }
 .slick-dots {
-    background: #99FFCC;
+    background: $mint-green;
     list-style: none;
     text-align: center;
     margin: 0;
