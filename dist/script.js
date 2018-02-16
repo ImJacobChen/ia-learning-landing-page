@@ -52,7 +52,7 @@ function initDropdowns() {
                 var dropdownMainLeft = this.element.getElementsByClassName('dropdown__main__left')[0];
                 var img = document.createElement('img');
                 img.className = 'dropdown__main__left__image';
-                img.src = '/images/gifs/thinking-man.gif';
+                img.src = './images/gifs/thinking-man.gif';
                 img.alt = 'Thinking man';
 
                 dropdownMainLeft.appendChild(img);
@@ -66,12 +66,12 @@ function initDropdowns() {
         var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
         if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
             dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
-            dropdownMainLeftImage.src = '/images/gifs/thinking-man.gif';
+            dropdownMainLeftImage.src = './images/gifs/thinking-man.gif';
             dropdown1HasBeenActivated = true;
         } else {
             var img = document.createElement('img');
             img.className = 'dropdown__main__left__image';
-            img.src = '/images/gifs/thinking-man.gif';
+            img.src = './images/gifs/thinking-man.gif';
             img.alt = 'Thinking man';
 
             dropdownMainLeft.appendChild(img);
@@ -86,7 +86,7 @@ function initDropdowns() {
                 var dropdownMainLeft = this.element.getElementsByClassName('dropdown__main__left')[0];
                 var img = document.createElement('img');
                 img.className = 'dropdown__main__left__image';
-                img.src = '/images/gifs/cogs.gif';
+                img.src = './images/gifs/cogs.gif';
                 img.alt = 'Machine cogs';
 
                 dropdownMainLeft.appendChild(img);
@@ -99,12 +99,12 @@ function initDropdowns() {
         var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
         if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
             dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
-            dropdownMainLeftImage.src = '/images/gifs/cogs.gif';
+            dropdownMainLeftImage.src = './images/gifs/cogs.gif';
             dropdown1HasBeenActivated = true;
         } else {
             var img = document.createElement('img');
             img.className = 'dropdown__main__left__image';
-            img.src = '/images/gifs/cogs.gif';
+            img.src = './images/gifs/cogs.gif';
             img.alt = 'Machine cogs';
 
             dropdownMainLeft.appendChild(img);
@@ -119,7 +119,7 @@ function initDropdowns() {
                 var dropdownMainLeft = this.element.getElementsByClassName('dropdown__main__left')[0];
                 var img = document.createElement('img');
                 img.className = 'dropdown__main__left__image';
-                img.src = '/images/gifs/security.gif';
+                img.src = './images/gifs/security.gif';
                 img.alt = 'Cyber security';
 
                 dropdownMainLeft.appendChild(img);
@@ -132,12 +132,12 @@ function initDropdowns() {
         var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
         if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
             dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
-            dropdownMainLeftImage.src = '/images/gifs/security.gif';
+            dropdownMainLeftImage.src = './images/gifs/security.gif';
             dropdown1HasBeenActivated = true;
         } else {
             var img = document.createElement('img');
             img.className = 'dropdown__main__left__image';
-            img.src = '/images/gifs/security.gif';
+            img.src = './images/gifs/security.gif';
             img.alt = 'Cyber security';
 
             dropdownMainLeft.appendChild(img);
@@ -152,7 +152,7 @@ function initDropdowns() {
                 var dropdownMainLeft = this.element.getElementsByClassName('dropdown__main__left')[0];
                 var img = document.createElement('img');
                 img.className = 'dropdown__main__left__image';
-                img.src = '/images/gifs/awards.gif';
+                img.src = './images/gifs/awards.gif';
                 img.alt = 'Award badges';
 
                 dropdownMainLeft.appendChild(img);
@@ -165,12 +165,12 @@ function initDropdowns() {
         var dropdownMainLeft = this.getElementsByClassName('dropdown__main__left')[0];
         if (dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]) {
             dropdownMainLeftImage = dropdownMainLeft.getElementsByClassName('dropdown__main__left__image')[0]
-            dropdownMainLeftImage.src = '/images/gifs/awards.gif';
+            dropdownMainLeftImage.src = './images/gifs/awards.gif';
             dropdown1HasBeenActivated = true;
         } else {
             var img = document.createElement('img');
             img.className = 'dropdown__main__left__image';
-            img.src = '/images/gifs/awards.gif';
+            img.src = './images/gifs/awards.gif';
             img.alt = 'Award badges';
 
             dropdownMainLeft.appendChild(img);
@@ -180,7 +180,7 @@ function initDropdowns() {
 }
 $(document).ready(function(){
     $('.carousel__slides').slick({
-        autoplay: true,
+        //autoplay: true,
         dots: true,
         appendDots: $('.carousel__navigation'),
         appendArrows: $('.carousel__navigation'),

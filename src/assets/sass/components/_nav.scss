@@ -21,7 +21,7 @@
 }
 
 .nav__logo {
-    width: 33%;
+    width: 50%;
     max-width: 132px;
     position: absolute;
     left: 17px;
@@ -144,7 +144,7 @@
     
             & > .nav__logo {
                 transform: translateY(33px);
-                max-width: 117px;
+                max-width: 150px;
                 left: 123px;
             }
 
@@ -159,7 +159,7 @@
      */
     .nav__logo {
         left: 123px;
-        max-width: 186px;
+        max-width: 185px;
     }
 
     /* Nav Top */

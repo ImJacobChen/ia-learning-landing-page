@@ -4653,7 +4653,7 @@ b {
       margin-top: 66px; }
 
 .nav__logo {
-  width: 33%;
+  width: 50%;
   max-width: 132px;
   position: absolute;
   left: 17px;
@@ -4798,7 +4798,7 @@ b {
       -ms-transform: translateY(33px);
       -o-transform: translateY(33px);
       transform: translateY(33px);
-      max-width: 117px;
+      max-width: 150px;
       left: 123px; }
     .nav.headroom--not-top + .carousel {
       margin-top: 57px; }
@@ -4807,7 +4807,7 @@ b {
      */
   .nav__logo {
     left: 123px;
-    max-width: 186px; }
+    max-width: 185px; }
   /* Nav Top */
   .nav__top {
     min-height: 33px; }
@@ -4999,15 +4999,21 @@ b {
 .carousel__slide-image--mobile {
   width: 100%; }
 
-.carousel__slide-title {
+.carousel__slide__text {
   width: 80%;
   position: absolute;
   left: 19px;
   bottom: 19px;
-  z-index: 2;
+  z-index: 2; }
+
+.carousel__slide-title {
   color: #fff;
   font-size: 30px;
   text-transform: uppercase; }
+
+.carousel__slide-sub-title {
+  color: #fff;
+  font-size: 18px; }
 
 /* Slide bottom */
 .carousel__slide__bottom {
@@ -5021,7 +5027,7 @@ b {
     color: #000033; }
 
 .carousel__navigation {
-  background: #99FFCC;
+  background: #50d4aa;
   position: relative;
   margin-top: -1px; }
 
@@ -5038,14 +5044,15 @@ b {
   .carousel {
     margin-top: 90px; }
   .carousel__slide-title {
+    font-size: 42px; }
+  .carousel__slide__text {
     max-width: 90%;
     left: 118px;
-    bottom: 19px;
-    font-size: 42px; }
+    bottom: 19px; }
   /* Slide bottom */
   .carousel__slide__bottom {
     padding: 8px 123px; }
-  .carousel__slide-subtext {
+  .carousel__slide-sub-title {
     font-size: 24px; }
   .slick-prev,
   .slick-next {
@@ -5181,6 +5188,11 @@ b {
   padding: 20px;
   font-size: 15px;
   color: #000033; }
+
+.dropdown__content__container__opening-image {
+  width: 42%;
+  display: block;
+  margin-bottom: 26px; }
 
 .dropdown__content__button {
   width: 100%;
@@ -5335,7 +5347,7 @@ b {
     background-color: #55acee; }
 
 .share-icons__icon-container--linkedin {
-  background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat left center/50% 50%; }
+  background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat left 42%/50% 50%; }
   .share-icons__icon-container--linkedin > .share-icons__mask {
     background-color: #0077b5; }
 
@@ -5351,15 +5363,20 @@ b {
   letter-spacing: 0.5px;
   position: relative;
   left: 45%;
-  top: 12px;
+  top: 14px;
   -webkit-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
-  font-size: 17px; }
+  font-size: 14px; }
 
 /*****************************
 * Responsive
 ***************************/
+@media screen and (min-width: 420px) {
+  .share-icons__icon-cta {
+    top: 12px;
+    font-size: 17px; } }
+
 @media screen and (min-width: 768px) {
   .share-icons {
     width: 48px;
@@ -5387,12 +5404,14 @@ b {
     background: #55acee url(images/icons/twitter-bird.svg) no-repeat center center/50% 50%; }
   .share-icons__icon-container--linkedin {
     background: #0077b5 url(images/icons/linkedin-in.svg) no-repeat center center/50% 50%; }
+    .share-icons__icon-container--linkedin .share-icons__icon-cta {
+      top: 2px; }
   .share-icons__icon-container--email {
     background: #7d7d7d url(images/icons/envelope2.svg) no-repeat center center/50% 50%; }
   .share-icons__icon-cta {
     opacity: 0;
     left: -35px;
-    top: 0px; } }
+    top: 1px; } }
 
 .dotted-separator {
   height: 1px;
@@ -5582,7 +5601,7 @@ footer {
 
 .slick-prev {
   left: 9px;
-  background: #99FFCC url(images/icons/prev-arrow.svg);
+  background: #50d4aa url(images/icons/prev-arrow.svg);
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   background-position: center center;
@@ -5590,14 +5609,14 @@ footer {
 
 .slick-next {
   right: 9px;
-  background: #99FFCC url(images/icons/next-arrow.svg);
+  background: #50d4aa url(images/icons/next-arrow.svg);
   -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   background-position: center center;
   background-repeat: no-repeat; }
 
 .slick-dots {
-  background: #99FFCC;
+  background: #50d4aa;
   list-style: none;
   text-align: center;
   margin: 0;

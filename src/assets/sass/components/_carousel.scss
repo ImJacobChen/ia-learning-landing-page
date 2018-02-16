@@ -28,15 +28,23 @@
     width: 100%;
 }
 
-.carousel__slide-title {
+.carousel__slide__text {
     width: 80%;
     position: absolute;
     left: 19px;
     bottom: 19px;
     z-index: 2;
-    color: #fff;
+}
+
+.carousel__slide-title {
+    color: $white;
     font-size: 30px;
     text-transform: uppercase;
+}
+
+.carousel__slide-sub-title {
+    color: $white;
+    font-size: 18px;
 }
 
 /* Slide bottom */
@@ -55,7 +63,7 @@
 }
 
 .carousel__navigation {
-    background: #99FFCC;
+    background: $mint-green;
     position: relative;
     margin-top: -1px;
 }
@@ -78,10 +86,13 @@
     }
 
     .carousel__slide-title {
+        font-size: 42px;
+    }
+
+    .carousel__slide__text {
         max-width: 90%;
         left: 118px;
         bottom: 19px;
-        font-size: 42px;
     }
 
     /* Slide bottom */
@@ -89,7 +100,7 @@
         padding: 8px 123px;
     }
 
-    .carousel__slide-subtext {
+    .carousel__slide-sub-title {
         font-size: 24px;
     }
 
