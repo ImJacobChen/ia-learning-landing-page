@@ -3323,6 +3323,9 @@ b {
 .uppercase {
   text-transform: uppercase; }
 
+.black-text-shadow {
+  text-shadow: 2px 2px #000; }
+
 .font-8 {
   font-size: 8px; }
 
