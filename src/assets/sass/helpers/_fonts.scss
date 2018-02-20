@@ -1,25 +1,35 @@
 @font-face {
     font-family: GravurCondensed;
-    src: url(fonts/GravuConRegCE.otf);
+    src: url(fonts/GravuConRegCE.otf),
+         url(fonts/GravuConRegCE.ttf),
+         url(fonts/GravuConRegCE.woff);
 }
 @font-face {
     font-family: GravurCondensed;
-    src: url(fonts/GravuConBlaCE.otf);
+    src: url(fonts/GravuConBlaCE.otf),
+         url(fonts/GravuConBlaCE.ttf),
+         url(fonts/GravuConBlaCE.woff);
     font-weight: bold;
 }
 
 @font-face {
     font-family: AkkuratPro;
-    src: url(fonts/AkkuratPro-Regular.otf);
+    src: url(fonts/AkkuratPro-Regular.otf),
+         url(fonts/AkkuratPro-Regular.ttf),
+         url(fonts/AkkuratPro-Regular.woff);
 }
 @font-face {
     font-family: AkkuratPro;
-    src: url(fonts/AkkuratPro-Light.otf);
+    src: url(fonts/AkkuratPro-Light.otf),
+         url(fonts/AkkuratPro-Light.ttf),
+         url(fonts/AkkuratPro-Light.woff);
     font-weight: 300;
 }
 @font-face {
     font-family: AkkuratPro;
-    src: url(fonts/AkkuratPro-Bold.otf);
+    src: url(fonts/AkkuratPro-Bold.otf),
+         url(fonts/AkkuratPro-Bold.ttf),
+         url(fonts/AkkuratPro-Bold.woff);
     font-weight: bold;
 }
 
@@ -29,7 +39,7 @@
 }
 @font-face {
     font-family: DotMatrix;
-    src: url(fonts/fonts/Dotmatrix-bold.ttf);
+    src: url(fonts/Dotmatrix-bold.ttf);
     font-weight: bold;
 }
 
