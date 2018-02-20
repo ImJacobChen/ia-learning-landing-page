@@ -45,7 +45,7 @@
 
 .dropdown__main__right h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 15px;
     color: $navy;
     text-transform: uppercase;
 }
@@ -212,6 +212,24 @@
 /*****************************
 * Responsive
 ***************************/
+@media screen and (min-width: 350px) {
+    .dropdown__main__right h3 {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 584px) {
+    .dropdown__main__right h3 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 664px) {
+    .dropdown__main__right h3 {
+        font-size: 21px;
+    }
+}
+
 @media screen and (min-width: $tablet) {
     .dropdown__main {
         height: 180px;
@@ -231,7 +249,7 @@
     }
 
     .dropdown__main__right h3 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .dropdown__main__button {
@@ -244,6 +262,12 @@
         height: 100%;
     }
 
+    .dropdown__main__right h3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: $large-desktop) {
     .dropdown__main__right h3 {
         font-size: 32px;
     }
