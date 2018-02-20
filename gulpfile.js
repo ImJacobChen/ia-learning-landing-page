@@ -53,7 +53,7 @@ gulp.task('sass', function() {
             ],
             cascade: false
         }))
-        //.pipe(cleanCSS())
+        .pipe(cleanCSS())
         .pipe(rename('style.css'))
         .pipe(gulp.dest('./dist'));
 });
@@ -65,7 +65,7 @@ gulp.task('images', function() {
 
 gulp.task('scripts', function() {
 
-    /* Ordered so there are no missing dependencies from files. */
+    /* Ordered so dependent files come later. */
     return gulp.src([
         assetsSrc + '/scripts/jquery-3.3.1.min.js',
         assetsSrc + '/scripts/slick.min.js',
